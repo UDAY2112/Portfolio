@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b929b6bed3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/My project.png" class="logo"> <!---logo o left cooner-->
+            <ul id = 'sidemenu'>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#PROJECTS">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>DATA ENTHUSIAST</p>
+            <h1>Hi, I'm <span>Uday Pratap Singh</span> <br> from New Delhi, India</h1>
+        </div>
+
+</div>
+</div>
+<!----------------about-------->
+<div id = "About"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/u1.jpeg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">About me</h1>
+                <p>Graduate with a background in Mechanical engineering, driven by a passion for data analytics and machine learning.
+
+                    <br>•Strong foundation in data analysis, statistical modeling, and machine learning techniques, through coursework and personal projects.
+                    <br>• Proficient in Python, SQL, and other data analysis tools.
+                    <br>• Proven ability to learn quickly and adapt to new technologies and tools.
+                    <br>• Strong problem-solving skills, and ability to work well in a team environment.
+                    <br>• As an enthusiastic data student, I am eager to apply my skills and continue learning in a career in data analytics and machine learning.
+                    
+                    <br>Seeking an entry-level role in data analytics or machine learning to begin my career and make a transition to the data world.
+                </p>
+                <div class = "tab-titles">
+                    <p class ="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+                    <p class ="tab-links" onclick="opentab('Experience')"> Experience</p>
+                    <p class ="tab-links"onclick="opentab('Education')"> Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id = "Skills">
+                    <ul>
+                        <li><span>Technology</span><br>Knowledge of SQL, HTML and programming in Python.
+                            Experience in visualization tools like Power BI and Tableau.
+                           Experience in Microsoft Office Suite like Ms excel and Power point.</li>
+                        <li><span>Interpersonal</span><br>Team-management, active listening and problem-solving are my strong points. I have worked in 
+                            teams for a long time and I have been able to adapt to any situation. I am quick learner which helps 
+                            me solve problems quickly. </li>
+                        <!----<li><span>Data Analyst</span><br>Data Analytics</li>----->
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id = "Experience">
+                    <ul>
+                        <li>
+                            <span><a href="https://www.congruex.com/" target="_blank" > Congruex Asia Pacific LLP</a> : Engineer 1</span>
+                            <br>
+                            <br>● Extensive experience in checking for new or changed requirements from city, state, and local governments and updating 
+                            those changes in the database.<br>
+                            <br>● Data collection from competitor websites through web scraping. <br>
+                            <br>● Data manipulation and cleaning using Python.<br>
+                            <br>● Data ingestion into the database to enable the design team to design according to the latest requirements. <br>
+                            <br>● Frequent communication with domestic stakeholders to convey new updates from cities and counties/states. <br>
+                            <br>
+                        </li>
+
+                        <li>
+                            <span><a href="https://www.focusenergy.co.in/" target="_blank" >FOCUS ENERGY LIMITED</a>: Intern Project Coordinator </span>
+                            <br>
+                            <br>● Coordinated with project teams and vendors to ensure timely delivery of materials and equipment for various projects at 
+                            plants in Jaisalmer, Rajasthan, India. <br>
+                            <br>● Collaborated with procurement and supply chain teams to negotiate pricing and terms with vendors, and to ensure 
+                            compliance with company policies. <br>
+                            <br>● Developed, monitored, and reported on project budget and expenses to ensure cost-effectiveness and to avoid budget 
+                            overruns. <br>
+                            <br>● Maintained accurate data in Ms excel and Google sheets related to purchases, contracts, and deliveries. <br>
+                            <br>● Drafted reports and presented findings to upper management on a weekly basis. <br>
+                            
+                        </li>
+
+                        <!---------<li><span>Data Analyst</span><br>Data Analytics</li>----------->
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id= "Education">
+                    <ul>
+                        <li>
+                            <span><a href=" https://imarticus.org/delhi/?utm_source=google&utm_medium=organic&utm_campaign=gmb-listing"target="_blank" >Imarticus Learning </a></span>
+                            
+                            <br>Data Analytics & Machine Learning
+                            <br><i class="fa-solid fa-location-dot"></i>
+                             New Delhi, India
+                            
+                        </li>
+                        <li>
+                            <span><a href="https://www.abes.ac.in/" target="_blank"> ABES ENGINEERING COLLEGE</a></span>
+                            <br>Mechanical Engineering
+                            <br><i class="fa-solid fa-location-dot"></i>
+                            Ghaziabad, Uttar Pradesh, India
+                        </li>
+                        <!-----<li><span>Data Analyst</span><br>Data Analytics</li>----->
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------PROJECT -->
+<div id="PROJECTS">
+    <div class="container">
+        <h1 class = "sub-title">Projects</h1>
+        <div class="Project-list">
+            <div>
+                <i class="fa-solid fa-diagram-project"></i>
+                <h2> The Titanic</h2>
+                <img src="Images/boat.gif", height="300", width="300">
+                <p>The Titanic data science project involves analyzing data on the passengers of the Titanic ship, 
+                    which famously sank on its maiden voyage in 1912.</p>
+                <a href= "https://www.kaggle.com/code/uday2112/titanic-log-reg" target="_blank">Project link </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-diagram-project"></i>
+                <h2> Project 2</h2>
+                <img src="Images/kart sale.gif", height="300", width="300">
+                <p>description jfhjasljksjahtajakhthkjasthklat</p>
+                <a href= "#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-diagram-project"></i>
+                <h2> Vaccine Status</h2>
+                <img src="Images/Vaccine Status.gif",height="40", width="300">
+                <p>The vaccine status data science project involves analyzing data on individuals' 
+                    vaccination status for a specific disease, such as COVID-19. 
+                    The dataset includes information on various 
+                    factors that may influence an individual's decision to get vaccinated</p>
+                <a href= "https://www.kaggle.com/code/uday2112/vaccine-prediction-decision-tree#compute-the-accuracy-measures" 
+                target="_blank"> Project link</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> Email - Udaysngh384@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7503003489</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/uday-pratap-singh-27b078153/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="link-url"><i class="fa-brands fa-github"></i></a> <!----NEED TO FILL-->>
+                    <a href="https://www.kaggle.com/uday2112" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
+                    <a href="https://www.hackerrank.com/Uday_Singh_" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+                
+                </div>
+                <a href="Images/Uday Pratap Singh_Data Analyst.pdf" class = "btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class = "btn btn2">submit</button>
+
+                </form>
+                <span id ="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Uday. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzdrJ63jIqJj25W_oD4mRIzjdtxPfLunvMkJAjjVvEA6RiJa3tDRLFNqxdRTKmasZ8y/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
