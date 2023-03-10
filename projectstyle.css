@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Popins", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+ background: #000000;;
+ color: #fff;    
+}
+.container{
+    padding: 10px 7%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+.container div H1{
+    color: yellowgreen;
+
+}
+
+#PROJECTS{
+    padding: 30px 0;
+}
+
+#PROJECTS a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.Project-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px,1fr));
+    grid-gap: 40px ;
+    margin-top:50px;
+}
+.Project-list div{
+    background-color: #6bc91e;
+    padding: 40px;
+    font-size: medium;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.Project-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.Project-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom:15px ;
+}
+.Project-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.Project-list div:hover{
+    background: #ec0c0c;
+    transform: translate(-10px);
+}
+/*-------contact--------*/
+
+.Visualization {
+    display: grid;
+    margin-top:50px;
+    margin-bottom: auto;
+    row-gap: 20px;
+}
+
+.Visualization div{
+    background-color: #6bc91e;
+    padding: 18px;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    height: max-content;
+    width: max-content;
+    
+}
+.Visualization div h2{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: unset;
+    margin-bottom: 10px;
+}
+
+.Visualization div:hover{
+    background: #ec0c0c;
+    transform: translate(-10px);
+}
